@@ -1,13 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+ margin: 0;
+  font-family: BentonSans !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.contSigncont {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+img {
+  object-fit: cover;
+  filter: contrast(10%);
+  filter: brightness(0%);
+  filter: saturate(90%);
+  height: 530px;
+  width: auto;
+}
+.vmaintext {
+  display: flex;
+  justify-content: center;
+  color: red;
+  algin-self: center;
+}
+@media (max-width: 1023px) {
+  .contSigncont {
+    background-image: url("/src/assets/rec.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100%;
+  }
+  .contSign {
+    margin: 40px;
+    //background: rgba(76, 175, 80, 0.9);
+    --tw-bg-opacity: 0.9;
+    font-color: red;
+    font-weight: 1000;
+    font-size: 2em;
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  .cad {
+    height: 100 vmax;
+    width: 100%;
+  }
+
+  .popup_inner {
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 16%;
+  }
+  .Navbar,
+  .slide,
+  .mslide {
+    display: none;
+  }
+  .main {
+    width: 96%;
+    margin-left: 2%;
+  }
 }
